@@ -6,7 +6,7 @@ namespace FirmaInzynieryjna
     {
         SLABY = 1,
         DOBRY = 2,
-        MEGA = 3
+        WYBITNY = 3
     }
 
     public class Inzynier
@@ -71,7 +71,7 @@ namespace FirmaInzynieryjna
             }
             else if (this.liczbaProjektow > 20 && this.skutecznosc == Skutecznosc.DOBRY)
             {
-                this.skutecznosc = Skutecznosc.MEGA;
+                this.skutecznosc = Skutecznosc.WYBITNY;
                 Console.WriteLine("[AWANS] " + imie + " " + nazwisko + " awansowal na status MEGA (Projekty: " + liczbaProjektow + ")");
             }
         }
@@ -122,7 +122,7 @@ namespace FirmaInzynieryjna
 
             zespol[0] = new Inzynier("Maks", "Nowacki", Skutecznosc.SLABY, -3);
             zespol[1] = new Inzynier("Antek", "Nakladek", Skutecznosc.DOBRY, 19);
-            zespol[2] = new Inzynier("Piotrek", "Zielony", Skutecznosc.MEGA, 0);
+            zespol[2] = new Inzynier("Piotrek", "Zielony", Skutecznosc.WYBITNY, 0);
 
             for (int runda = 1; runda <= 3; runda++)
             {
